@@ -52,4 +52,8 @@ module servicios{
 	    string registrarIngrediente(string nombre);
     }
 
+    interface Connection{
+      void checkConnection(string ip);
+    }
 }
+
