@@ -24,6 +24,11 @@ public class CoffeeMach {
 
       ConnectionPrx logistic = ConnectionPrx.checkedCast(proxy);
 
+      ConnectionPrx proxyBG = ConnectionPrx.checkedCast(
+              communicator.propertyToProxy("bodega")).ice_twoway();
+
+      ConnectionPrx almacenar = ConnectionPrx.checkedCast(proxyBG);
+
       ObjectAdapter adapter = communicator.createObjectAdapter("CoffeMach");
       ControladorMQ service = new ControladorMQ();
       service.setAlarmaService(alarmaS);
@@ -34,6 +39,7 @@ public class CoffeeMach {
       adapter.add((ServicioAbastecimiento) service, Util.stringToIdentity("abastecer"));
       adapter.activate();
       logistic.checkConnection(InetAddress.getLocalHost().toString());
+      almacenar.checkConnection(InetAddress.getLocalHost().toString());
       communicator.waitForShutdown();
     } catch (UnknownHostException e) {
       throw new RuntimeException(e);
