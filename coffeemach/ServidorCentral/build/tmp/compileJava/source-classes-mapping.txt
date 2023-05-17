@@ -27,8 +27,8 @@ alarma/AlarmasManager.java
  alarma.AlarmasManager
 ventas/VentasManager.java
  ventas.VentasManager
-servicios/ServicioComLogisticaPrx.java
- servicios.ServicioComLogisticaPrx
+servicios/_ConnectionPrxI.java
+ servicios._ConnectionPrxI
 servicios/VentaService.java
  servicios.VentaService
  servicios.VentaService$1
@@ -47,8 +47,8 @@ servicios/ServicioComLogistica.java
  servicios.ServicioComLogistica$1
 servicios/AlarmaServicePrx.java
  servicios.AlarmaServicePrx
-servicios/MapStrIntHelper.java
- servicios.MapStrIntHelper
+servicios/ConnectionPrx.java
+ servicios.ConnectionPrx
 servicios/RecetaService.java
  servicios.RecetaService
  servicios.RecetaService$1
@@ -67,9 +67,9 @@ servicios/AlarmaService.java
  servicios.AlarmaService$1
 modelo/AsignacionMaquina.java
  modelo.AsignacionMaquina
-servicios/ServicioAbastecimiento.java
- servicios.ServicioAbastecimiento
- servicios.ServicioAbastecimiento$1
+servicios/Connection.java
+ servicios.Connection
+ servicios.Connection$1
 servicios/StringSeqHelper.java
  servicios.StringSeqHelper
 modelo/RecetaIngrediente.java
@@ -85,10 +85,10 @@ interfaz/ControladorRecetas.java
  interfaz.ControladorRecetas$3
 modelo/VentasReceta.java
  modelo.VentasReceta
-servicios/_ConnectionPrxI.java
- servicios._ConnectionPrxI
-servicios/Connection.java
- servicios.Connection
- servicios.Connection$1
-servicios/ConnectionPrx.java
- servicios.ConnectionPrx
+servicios/MapStrIntHelper.java
+ servicios.MapStrIntHelper
+servicios/ServicioAbastecimiento.java
+ servicios.ServicioAbastecimiento
+ servicios.ServicioAbastecimiento$1
+servicios/ServicioComLogisticaPrx.java
+ servicios.ServicioComLogisticaPrx
